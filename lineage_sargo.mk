@@ -17,9 +17,49 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 3a
 PRODUCT_NAME := lineage_sargo
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
+# Lawnchair (Pixel launcher by default)
+TARGET_INCLUDE_PIXEL_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+
+# Exclude Aperture camera
+PRODUCT_NO_CAMERA := true
+
+# Google Camera App
+TARGET_PREBUILT_GOOGLE_CAMERA := true
+
+# Custom package installer
+TARGET_USE_CUSTOM_PACKAGE_INSTALLER := true
+
+# Live wallpapers
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+
+# Quick tap
+TARGET_SUPPORTS_QUICK_TAP  := true
+
+# Now Playing
+TARGET_SUPPORTS_NOW_PLAYING := true
+
+# Clear Calling
+TARGET_SUPPORTS_CLEAR_CALLING := true
+
+# Call Recording Support
+TARGET_SUPPORTS_CALL_RECORDING := true
+
+# GMS
+WITH_GMS := true
+
+# Mist OS Flags
+MIST_BUILD_TYPE := UNOFFICIAL
+MISTOS_MAINTAINER := GamerBoy1234294
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2220
 TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sargo-user 12 SP2A.220505.008 8782922 release-keys" \
